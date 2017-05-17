@@ -1,39 +1,62 @@
 /* Kyle's Styles */
+@supports (--main-bg-color: #fff) {
+  :root {
+    --main-bg-color: #515255;
+    --main-color: #efefef;
+    --flair-color: #ffc425;
+    --secondary-flair-color: #ae5a41;
+    --main-font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+}
 
-html { font-size: 20px; }
+
+
+html { font-size: 20px; background: var(--main-bg-color); color: var(--main-color); padding: 0; margin: 0}
+h1, h2, h3, h4, h5, h6 { font-family: var(--main-font)}
 h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 26px; }
 
-a { cursor: pointer; text-decoration: none; }
+a { cursor: pointer; text-decoration: none; color: var(--main-color); }
 
+#container { max-width: 1300px; margin-left: auto; margin-right: auto;}
 .kyleButton {
-  padding: 10px 20px;
-  border: 1px solid black;
+  padding: 15px 30px;
+  border: 1px dashed var(--main-color);
+  background-color: #333;
   transition: 0.3s all ease;
   margin-top: 20px;
+  box-shadow: 0px 0px 0px 5px #333;
 }
 
 .kyleButton:hover {
-  background-color: black;
-  color: white;
+  background-color: #222;
+  box-shadow: 0px 0px 0px 5px #222;
 }
 
 #home-header {
-padding: 100px 0;
-text-align: center;
+padding: 30px 0 100px 0;
+}
+
+#home-header h1 {
+  font-size: 80px;
+  font-weight: 600;
+  color: var(--flair-color);
+  margin-bottom: 10px;
+}
+
+#home-header h3 {
+  font-size: 30px;
 }
 
 #about-me {
-  min-height: 500px;
-  max-width: 1300px;
-    margin: 0 auto;
   display: flex;
 display: -webkit-flex;
+box-shadow: 10px 10px 5px #333; ;
 }
 
 #about-me .one-half {
-  background-color: #cccccc;
+  background-color: var(--secondary-flair-color);
 }
 
 .one-half {
@@ -53,4 +76,11 @@ display: -webkit-flex;
 
 #contact-me {
   text-align: center;
+  padding: 30px 0;
+}
+
+@media(max-width: 768px) {
+  .one-half {
+    width: 100%;
+  }
 }
