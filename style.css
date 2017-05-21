@@ -2,6 +2,7 @@
 @supports (--main-bg-color: #fff) {
   :root {
     --main-bg-color: #fefefe;
+    --secondary-bg-color: #eeeeee;
     --main-color: #333333;
     --header-color: #fefefe;
     --flair-color: #ffc425;
@@ -40,12 +41,18 @@ a { cursor: pointer; text-decoration: none; color: var(--main-bg-color); }
 height: 80vh;
 min-height: 500px;
 margin-bottom: 20px;
-display: flex;
-justify-content: center;
--webkit-justify-content: center;
-align-items: center;
--webkit-align-items: center;
-flex-direction: column;
+}
+
+#home-header-overlay {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-direction: column;
 }
 
 #home-header-inner {
@@ -64,28 +71,26 @@ flex-direction: column;
 }
 
 #about-me {
+
+}
+
+#card-row {
   display: flex;
 display: -webkit-flex;
-box-shadow: 10px 10px 5px #333; ;
 }
 
-#about-me .one-half {
-  background-color: var(--secondary-flair-color);
+.kyle-card {
+ background: var(--secondary-bg-color);
+ width: calc(100% / 3);
+ padding: 10px;
 }
 
-.one-half {
-  width: 50%;
+.kyle-card-header {
+  font-size: 2em;
 }
 
-.about-me-block {
-  padding: 10%;
-}
+.kyle-card-content {
 
-.dev-image {
-  background-image: url("https://unsplash.it/1000?image=0");
-  padding-top: 100%;
-  background-size: cover;
-  background-repeat: no-repeat
 }
 
 #contact-me {
