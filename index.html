@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="/bulma/css/bulma.css" rel="stylesheet" type="text/css">
   <link href="style.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700|Open+Sans:300,400,700" rel="stylesheet">
-  <title>Kyle Griffin - Web Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Kyle Griffin - Front-End Web Developer</title>
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -27,32 +29,57 @@
 </head>
 
 <body>
-  <div id="navigation-bar">
-    <ul>
-      <li class="menu-item"><a href="#about-me" >About</a></li>
-      <li class="menu-item"><a href="#what-i-do">Services</a></li>
-      <li class="menu-item"><a href="#work">Work</a></li>
-      <li class="menu-item contact-item"><a href="#contact">Contact</a></li>
-    </ul>
+  <div class="container">
+    <div class="nav-left">
+    </div>
+    <div class="nav-right">
+      <div class="nav-item">
+        <a href="#about-me">About</a>
+      </div>
+      <div class="nav-item">
+        <a href="#what-i-do">Services</a>
+      </div>
+      <div class="nav-item">
+        <a href="#work">Work</a>
+      </div>
+      <div class="nav-item">
+        <a href="#contact">Contact</a>
+      </div>
+      </ul>
+    </div>
   </div>
-  <div id="home-header">
-    <div id="home-header-overlay">
-      <div id="home-header-inner">
-        <h1>Kyle Griffin</h1>
-        <h3>Front-End Web Developer</h3>
+  </div>
+  <div class="hero is-kyle is-medium is-bold">
+    <div id="home-header-inner" class="hero-body">
+      <div class="container">
+        <h1 class="title">Kyle Griffin</h1>
+        <h3 class="subtitle">Front-End Web Developer</h3>
       </div>
     </div>
   </div>
-  <div id="container">
-    <div id="about-me">
-      <div id="about-me-container">
-        Hi. I am a front-end web developer based in London. I have over 3 years experience coding for the web. I also work for a digital marketing firm in the heart of London.
+  <div class="section">
+    <div class="container columns">
+      <div class="box is-half is-offset-one-quarter column">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-128x128">
+              <img src="https://pbs.twimg.com/profile_images/852883733845880833/RwwDgfg3_400x400.jpg" alt="Kyle Griffin - Web Developer" />
+            </figure>
+          </div>
+          <div class="media-content">
+              <p>
+                I am a front-end web developer based in London.
+              </p>
+              <p>I have over 3 years experience coding for the web. I also work for <a href="https://sobold.co.uk" target="_blank">SoBold</a>, a digital marketing firm in the heart of London.</p>
+          </div>
+        </div>
       </div>
-    </div>
+  </div>
+</div>
     <div id="what-i-do">
       <h2>Services</h2>
-      <div id="services-row">
-        <div class="service">
+      <div id="services-row" class="columns">
+        <div class="service column">
           <svg fill="#000000" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
@@ -64,7 +91,7 @@
             Static or CMS; I work with you to deliver bespoke web experiences for your business.
           </p>
         </div>
-        <div class="service">
+        <div class="service column">
           <svg fill="#000000" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
     <path clip-rule="evenodd" d="M0 0h24v24H0z" fill="none"/>
     <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
@@ -74,9 +101,9 @@
           </h3>
           <p>
             I can host and manage your website's uptime and performance. I also offer site migrations, SSL and more.
-          <p>
+            <p>
         </div>
-        <div class="service">
+        <div class="service column">
           <svg fill="#000000" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -90,11 +117,24 @@
         </div>
       </div>
     </div>
-    <div id="contact-me">
-      <h2>Interested?</h2>
-      <p>
-        <a class="kyleButton" href="mailto:kylefilegriffin@gmail.com">Drop me an email</a>
-      </p>
+    <div id="contact">
+      <div class="container">
+        <div class="section is-medium">
+      <h2 class="has-text-centered">Contact me</h2>
+      <br />
+      <div class="columns">
+        <div class="column has-text-centered">
+            <a href="mailto:kylefilegriffin@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+        </div>
+        <div class="column has-text-centered">
+          <a href="https://twitter.com/kylefilegriffin" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+        </div>
+        <div class="column has-text-centered">
+          <a href="https://www.linkedin.com/in/kylegriffin2" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+        </div>
+      </div>
+
+    </div>
     </div>
   </div>
 </body>

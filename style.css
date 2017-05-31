@@ -4,11 +4,10 @@
     --main-bg-color: #fefefe;
     --secondary-bg-color: #eeeeee;
     --main-color: #333333;
-    --header-color: #fefefe;
-    --flair-color: #ffc425;
-    --secondary-flair-color: #ae5a41;
+    --flair-color: #0375B4;
+    --flair-color-hover: #0088d4;
     --header-font: 'Open Sans', sans-serif;
-    --main-font: "Gentium Basic", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    --main-font: 'Open Sans', "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
 }
 
@@ -18,7 +17,12 @@ h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 26px; }
 
-a { cursor: pointer; text-decoration: none; color: var(--main-bg-color); }
+a { cursor: pointer; text-decoration: none; color: var(--flair-color); transition: 0.3s color ease; }
+a:hover { color: var(--flair-color-hover); }
+
+.is-kyle {
+  background-color: var(--flair-color);
+}
 
 #container { max-width: 1300px; margin-left: auto; margin-right: auto;}
 .kyleButton {
@@ -35,30 +39,11 @@ a { cursor: pointer; text-decoration: none; color: var(--main-bg-color); }
   box-shadow: 0px 0px 0px 5px #222;
 }
 
-#navigation-bar {
-  position: absolute;
-  width: 100%;
-  max-width: 1400px;
-  top: 0;
-  z-index: 2;
+.nav-item {
+font-size: 0.9rem;
 }
 
-#navigation-bar ul {
-  float: right;
-  list-style: none;
-  display: flex;
-  width: 100%;
-  max-width: 500px;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-}
-
-#navigation-bar ul li {
-  padding: 0px 10px;
-}
-
-#navigation-bar ul .menu-item:after {
+.nav-item:after {
   width: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -69,49 +54,20 @@ a { cursor: pointer; text-decoration: none; color: var(--main-bg-color); }
   content: "";
 }
 
-#navigation-bar ul li:hover:after {
+.nav-item:hover:after {
   width: 100%;
 }
 
-#home-header {
-  position: relative;
-  top: 0;
-  width: 100%;
-  background: url(london.jpg) 50% 50% no-repeat;
-  background-size: cover;
-height: 80vh;
-min-height: 500px;
-margin-bottom: 20px;
-box-shadow: 0px 3px 3px 2px #333333;
-}
-
-#home-header-overlay {
-  background: rgba(0,0,0,0.5);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  flex-direction: column;
-}
-
-#home-header-inner {
-  text-align: center;
-  color: var(--header-color)
-}
-
-#home-header h1 {
-  font-size: 80px;
-  font-weight: 100;
-  margin-bottom: 10px;
+#home-header-inner .title {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--main-bg-color);
   font-family: var(--header-font);
-  font-weight: 700;
 }
 
-#home-header h3 {
-  font-size: 30px;
+#home-header-inner .subtitle{
+  color: var(--main-bg-color);
+  font-size: 2.125rem;
 }
 
 #about-me {
@@ -134,11 +90,8 @@ box-shadow: 0px 3px 3px 2px #333333;
 
 #services-row {
   max-width: 1040px;
-  padding: 0px 20px;
   margin: 0 auto;
-  display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 0 41px;
+  padding: 10px 0px;
 }
 
 .service {
