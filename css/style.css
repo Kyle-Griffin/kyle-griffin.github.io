@@ -1,0 +1,136 @@
+/* Main SCSS stylesheet for my site */
+/*
+@import - add in code from other partial files. do not include the _ or .scss
+@mixin - create a mixin (e.g. @mixin round($circumference) { })
+  @include - refer to a mixin (e.g. box-shadow: @include round(10px); )
+@extend - include styles from another existing style (e.g. change the colour of a base button)
+*/
+/* Vendor imports */
+/* Partials */
+/* colors */
+/* font family */
+html {
+  font-size: 20px;
+  background: #fefefe;
+  color: #373D3F;
+  padding: 0;
+  margin: 0; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 26px; }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #0375B4;
+  transition: 0.3s color ease; }
+  a :hover {
+    color: #0088d4; }
+
+.is-kyle {
+  background: -webkit-linear-gradient(bottom right, #0088d4, #0375B4); }
+
+#container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.kyleButton {
+  padding: 15px 30px;
+  border: 1px dashed #fefefe;
+  background-color: #333;
+  transition: 0.3s all ease;
+  margin-top: 20px;
+  box-shadow: 0 0 0 5px #333; }
+  .kyleButton :hover {
+    background-color: #222;
+    box-shadow: 0 0 0 5px #222; }
+
+.nav-item {
+  font-size: 0.9rem; }
+  .nav-item a {
+    color: #fefefe; }
+  .nav-item a:hover {
+    color: #fefefe; }
+  .nav-item :after {
+    width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border-bottom: 2px solid #fefefe;
+    transition: 0.3s width ease-in-out;
+    display: block;
+    content: ""; }
+  .nav-item :hover:after {
+    width: 100%; }
+
+.nav-item:hover:after {
+  width: 100%; }
+
+#home-header-inner .title {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fefefe;
+  font-family: "Open Sans", sans-serif; }
+
+#home-header-inner .subtitle {
+  color: #fefefe;
+  font-size: 2.125rem; }
+
+#about-me {
+  padding: 50px 0 20px; }
+
+#about-me-container {
+  width: 800px;
+  margin: 0 auto; }
+
+#what-i-do {
+  padding: 40px 0; }
+
+#what-i-do > h2 {
+  text-align: center;
+  margin-bottom: 50px; }
+
+#services-row {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 0; }
+
+.service {
+  text-align: left; }
+
+.service svg {
+  fill: #373D3F; }
+
+.service h3 {
+  padding: 8px 0 10px;
+  margin: 0; }
+
+.service p {
+  margin: 0;
+  line-height: 1.566; }
+
+#what-i-do h2 {
+  margin: 30px 0;
+  font-size: 2em; }
+
+#contact-me {
+  text-align: center;
+  padding: 30px 0; }
+
+@media (max-width: 1300px) {
+  #container {
+    width: 100%;
+    margin: 0 1em; } }
+
+/*# sourceMappingURL=style.css.map */
