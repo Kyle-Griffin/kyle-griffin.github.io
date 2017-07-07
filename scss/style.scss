@@ -10,7 +10,7 @@
 @import "partials/colors-and-fonts";
 
 html {
-  font-size: 20px;
+  font-size: calc(10px + 0.5vw);
   background: $main-bg-color;
   color: $main-color;
   padding: 0;
@@ -20,18 +20,20 @@ html {
 body {
   margin: 0;
   font-family: $main-font;
+    background-color: $secondary-bg-color;
+    padding-bottom: 5vh;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: calc(16px + 1.5vw);
 }
 
 h2 {
-  font-size: 30px;
+  font-size: calc(14px + 1vw);
 }
 
 h3 {
-  font-size: 26px;
+  font-size: calc(12px + 0.5vw);
 }
 
 a {
@@ -49,8 +51,9 @@ a {
   background: -webkit-linear-gradient(bottom right, $flair-color-hover, $flair-color);
 }
 
-#container {
+.main-container {
   max-width: 1300px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -76,7 +79,7 @@ a {
     color: $main-bg-color;
   }
 
-   a:hover {
+  a:hover {
     color: $main-bg-color;
   }
 
@@ -112,6 +115,11 @@ a {
   font-size: 2.125rem;
 }
 
+.kyle-image img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
 #about-me {
   padding: 50px 0 20px;
 }
@@ -119,10 +127,6 @@ a {
 #about-me-container {
   width: 800px;
   margin: 0 auto;
-}
-
-#what-i-do {
-  padding: 40px 0;
 }
 
 #what-i-do > h2 {
@@ -138,25 +142,69 @@ a {
 
 .service {
   text-align: left;
+
+  svg {
+    fill: $main-color;
+  }
+
+  h3 {
+    padding: 8px 0 10px;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.566;
+  }
 }
 
-.service svg {
-  fill: $main-color;
+#skills-wrapper > h2 {
+    text-align: center;
 }
 
-.service h3 {
-  padding: 8px 0 10px;
-  margin: 0;
+#skills-container {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+grid-row-gap: 10px;
 }
 
-.service p {
-  margin: 0;
-  line-height: 1.566;
+.skill-header {
+img {
+  max-height: 64px;
+}
+p {
+  font-size: 14px;
+}
 }
 
-#what-i-do h2 {
-  margin: 30px 0;
-  font-size: 2em;
+.skills-box {
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+background-color: #fefefe;
+border-radius: 3px;
+min-width: 50%;
+min-height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+transform-style: preserve-3d;
+}
+
+.skills-box .skill-header {
+  padding: 10px;
+
+  img {
+    transform: translateZ(20px);
+  }
+}
+
+.skill-bar {
+  text-align: center;
 }
 
 #contact-me {

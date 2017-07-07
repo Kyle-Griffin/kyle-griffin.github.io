@@ -10,7 +10,7 @@
 /* colors */
 /* font family */
 html {
-  font-size: 20px;
+  font-size: calc(10px + 0.5vw);
   background: #fefefe;
   color: #373D3F;
   padding: 0;
@@ -18,21 +18,25 @@ html {
 
 body {
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color: #eeeeee;
+  padding-bottom: 5vh; }
 
 h1 {
-  font-size: 36px; }
+  font-size: calc(16px + 1.5vw); }
 
 h2 {
-  font-size: 30px; }
+  font-size: calc(14px + 1vw); }
 
 h3 {
-  font-size: 26px; }
+  font-size: calc(12px + 0.5vw); }
 
 a {
   cursor: pointer;
   text-decoration: none;
   color: #0375B4;
+  -webkit-transition: 0.3s color ease;
+  -o-transition: 0.3s color ease;
   transition: 0.3s color ease; }
   a :hover {
     color: #0088d4; }
@@ -40,8 +44,9 @@ a {
 .is-kyle {
   background: -webkit-linear-gradient(bottom right, #0088d4, #0375B4); }
 
-#container {
+.main-container {
   max-width: 1300px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -49,11 +54,15 @@ a {
   padding: 15px 30px;
   border: 1px dashed #fefefe;
   background-color: #333;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   margin-top: 20px;
+  -webkit-box-shadow: 0 0 0 5px #333;
   box-shadow: 0 0 0 5px #333; }
   .kyleButton :hover {
     background-color: #222;
+    -webkit-box-shadow: 0 0 0 5px #222;
     box-shadow: 0 0 0 5px #222; }
 
 .nav-item {
@@ -68,6 +77,8 @@ a {
     margin-right: auto;
     margin-top: 5px;
     border-bottom: 2px solid #fefefe;
+    -webkit-transition: 0.3s width ease-in-out;
+    -o-transition: 0.3s width ease-in-out;
     transition: 0.3s width ease-in-out;
     display: block;
     content: ""; }
@@ -87,15 +98,16 @@ a {
   color: #fefefe;
   font-size: 2.125rem; }
 
+.kyle-image img {
+  border-radius: 50%;
+  max-width: 200px; }
+
 #about-me {
   padding: 50px 0 20px; }
 
 #about-me-container {
   width: 800px;
   margin: 0 auto; }
-
-#what-i-do {
-  padding: 40px 0; }
 
 #what-i-do > h2 {
   text-align: center;
@@ -108,21 +120,65 @@ a {
 
 .service {
   text-align: left; }
+  .service svg {
+    fill: #373D3F; }
+  .service h3 {
+    padding: 8px 0 10px;
+    margin: 0; }
+  .service p {
+    margin: 0;
+    line-height: 1.566; }
 
-.service svg {
-  fill: #373D3F; }
+#skills-wrapper > h2 {
+  text-align: center; }
 
-.service h3 {
-  padding: 8px 0 10px;
-  margin: 0; }
+#skills-container {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-row-gap: 10px; }
 
-.service p {
-  margin: 0;
-  line-height: 1.566; }
+.skill-header img {
+  max-height: 64px; }
 
-#what-i-do h2 {
-  margin: 30px 0;
-  font-size: 2em; }
+.skill-header p {
+  font-size: 14px; }
+
+.skills-box {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  background-color: #fefefe;
+  border-radius: 3px;
+  min-width: 50%;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.skills-box .skill-header {
+  padding: 10px; }
+  .skills-box .skill-header img {
+    -webkit-transform: translateZ(20px);
+    transform: translateZ(20px); }
+
+.skill-bar {
+  text-align: center; }
 
 #contact-me {
   text-align: center;
@@ -132,5 +188,3 @@ a {
   #container {
     width: 100%;
     margin: 0 1em; } }
-
-/*# sourceMappingURL=style.css.map */
