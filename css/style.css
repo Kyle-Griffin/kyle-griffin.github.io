@@ -31,6 +31,7 @@
 /* Partials */
 /* colors */
 /* font family */
+* {box-sizing: border-box;}
 html {
   font-size: 10px;
   background: #F1F5F8;
@@ -46,6 +47,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.566;
   font-weight: 600;
+  padding-bottom: 10vh;
  }
 
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -205,6 +207,30 @@ p.work-inner-strapline {  font-size: 120%; }
 .work-inner-section-header h2 { grid-area: name; margin: 0;}
 .work-inner-section-header .work-section-date { grid-area: date; margin: 0;}
 
+/* contact */
+#contact { margin-bottom: 30px; }
+form {
+  width: 100%;
+  background: white;
+  padding: 30px 3vw;
+  max-width: max-content;
+  margin: 0 auto;
+}
+form * { display: block; }
+form input, form textarea {
+  margin-top: 6px;
+  font-size: 20px;
+  padding: 3px 0 3px 8px;
+  border-radius: 3px;
+  border: 2px solid #333333;
+}
+form label { margin-bottom: 16px;}
+form input[type=submit] {
+  font-size: 20px;
+  background: orange;
+  border: 0;
+  padding: 4px 20px;
+}
 @media (max-width: 768px) {
   .section {
     min-height: 30vmax;
