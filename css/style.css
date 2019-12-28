@@ -207,8 +207,17 @@ p.work-inner-strapline {  font-size: 120%; }
 .work-inner-section-header h2 { grid-area: name; margin: 0;}
 .work-inner-section-header .work-section-date { grid-area: date; margin: 0;}
 
+.site-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 16px;
+}
+
 /* contact */
 #contact { margin-bottom: 30px; }
+#contact > div { 
+  margin: 0 auto;
+}
 form {
   width: 100%;
   background: white;
