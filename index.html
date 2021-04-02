@@ -1,177 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/toggle.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="google-site-verification"
+      content="rKCLwQOLWWI6luyZPIKXcXHlyASFsuCeTKLBkiAVwk0"
+    />
+    <title>Kyle Griffin - Front-End Web Developer</title>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-  <meta name="google-site-verification" content="rKCLwQOLWWI6luyZPIKXcXHlyASFsuCeTKLBkiAVwk0" />
-  <title>Kyle Griffin - Front-End Web Developer</title>
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga("create", "UA-99582139-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script> 
+  </head>
 
-    ga('create', 'UA-99582139-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
-
-<body>
+  <body>
     <div id="first-section" class="section">
       <div class="vertical-center">
         <h1 class="first-section-title">
-          KYLE GRIFFIN</h1>
-          <h3 class="first-section-subtitle">Front-End Web Developer</h3>
-          <div class="short-seperator"></div>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/kylegriffin2/" target="_blank">LinkedIn</a><span>/</span>
-            <a href="https://drive.google.com/file/d/1hUWicG051-n0cyZbqVpQq5bi_5CMtmL5/view?usp=sharing">C.V.</a><span>/</span>
-            <a href="mailto:hello@kylegriffin.co.uk">Contact</a>
-          </div>
-          <div>
-            <p>Based in London, I develop beautiful, robust websites using a variety of front-end technologies.</p>
-          </div>
+          <span>K</span><span>Y</span><span>L</span><span id="the-e">E</span>
+          GRIFFIN</h1>
+        <h3 class="first-section-subtitle">Front-End Web Developer</h3>
+        <div class="short-seperator"></div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/kylegriffin2/" target="_blank"
+            >LinkedIn</a
+          ><span>/</span>
+          <a
+            href="https://drive.google.com/file/d/1hUWicG051-n0cyZbqVpQq5bi_5CMtmL5/view?usp=sharing"
+            >C.V.</a
+          ><span>/</span>
+          <a href="mailto:hello@kylegriffin.co.uk">Contact</a>
+        </div>
+        <div>
+          <p>
+            Based in London, I develop beautiful, robust websites using a
+            variety of front-end technologies.
+          </p>
+        </div>
       </div>
-    </div>
-    <div id="services" class="section">
-      <div class="services-container">
-      <h2 class="section-header">
-        I do...
-      </h2>
-      <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>WordPress</li>
-        <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Landing Pages</li>
-        <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Site Migrations</li>
-          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>HTML Email</li>
-          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>eCommerce</li>
-          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Website Management</li>
-      </ul>
-    </div>
     </div>
     <div id="work" class="section">
       <div class="work-inner">
-        <h2 class="section-header"> Work </h2>
-        <h3> I have developed websites for small and large enterprises since <b>2015</b>.</h3>
-          <!-- may just white block this with drop shadow -->
+        <h2 class="section-header">Work</h2>
+        <h3>
+          I have developed websites for small and large enterprises since
+          <b>2015</b>.
+        </h3>
+        <div class="work-inner-section" id="twc">
+          <div class="work-inner-section-header">
+            <svg
+              data-v-65998ac0=""
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 451.5 94.8"
+              svg-inline=""
+              role="presentation"
+              focusable="false"
+              tabindex="-1"
+            >
+              <path
+                data-v-65998ac0=""
+                fill="none"
+                stroke="#000"
+                stroke-width="1.5"
+                d="M.8.8h450v93.3H.8z"
+              ></path>
+              <path
+                data-v-65998ac0=""
+                d="M51.1 27.5h-7.2v18.2h-3V27.5h-7.2v-2.7H51l.1 2.7zm24.4 18.3h-3v-9.1H60.9v9.1h-3V24.9h3V34h11.7v-9.1h3v20.9h-.1zM96 27.5h-8.8v6.3h8.5v2.7h-8.5V43h9.1v2.7H84.2V24.9H96v2.6zM137 46h-.6l-6.8-17.1-6.9 17.1h-.6l-8.4-21.1h3l5.7 14.4 5.8-14.4h2.8l5.8 14.4 5.7-14.4h3L137 46zm32.4-.2h-3v-9.1h-11.7v9.1h-3V24.9h3V34h11.7v-9.1h3v20.9zm11.6 0h-3V24.9h3v20.9zm24.2-18.3H198v18.2h-3V27.5h-7.2v-2.7h17.4v2.7zm18.7 0h-8.8v6.3h8.5v2.7h-8.5V43h9.1v2.7h-12.1V24.9h11.8v2.6zm37.7 2c-2.6-1.5-4.8-2.2-7.2-2.2-4.8 0-8.3 3.4-8.3 8 0 4.7 3.4 7.9 8.4 7.9 2.4 0 4.9-.8 7.3-2.4v3.3c-2.1 1.1-4.3 1.8-7.6 1.8-7.8 0-11.3-6-11.3-10.4 0-6.4 4.8-11 11.4-11 2.1 0 4.3.5 7.2 1.7v3.3h.1zm10 5.9c0-4.6 3.5-8 8.1-8 4.7 0 8.1 3.4 8.1 8s-3.5 8-8.1 8c-4.6-.2-8.1-3.5-8.1-8zm-3.1 0c0 5.7 4.3 10.7 11.1 10.7 7.1 0 11.3-5.1 11.3-10.7 0-5.8-4.3-10.7-11.2-10.7-6.8-.1-11.2 4.8-11.2 10.7zm49.4 10.4h-3V29.5h-.1l-6.4 8.1h-.5l-6.4-8.1h-.1v16.3h-3V24.9h2.8l6.9 8.6 6.9-8.6h2.8l.1 20.9zm12.5-18.3h3.5c2.7 0 3.6 1.7 3.6 3.2 0 2.1-1.4 3.3-3.7 3.3h-3.4v-6.5zm-3-2.6v20.9h3v-9h3.1c4.8 0 7-2.6 7-5.9s-2.1-6-6.6-6h-6.5zm27.5 4.5l3.4 7.6h-6.5l3.1-7.6zm1-4.6h-2.1l-9 21h3.1l2.6-6.1h8.9l2.8 6.1h3.1l-9.4-21zm35 21h-2.6l-13.9-16.1v16.1h-2.8V24.9h2.4l14.1 16.2V24.9h2.8v20.9zm21-20.9h3.6l-7.7 9.9v11h-3v-11l-7.7-9.8h3.6l5.6 7.2 5.6-7.3zM184.4 61.8h-1.6v9.7h6v-1.8h-4.1v-7.9h-.3zm12.1 4.7c0 2.8 2.2 4.9 5.1 4.9 3.4 0 5.2-2.5 5.2-4.9 0-2.9-2.2-5-5.2-5-2.8.1-5.1 2.3-5.1 5zm2 0c0-1.8 1.4-3.2 3.2-3.2 1.9 0 3.2 1.3 3.2 3.2 0 1.8-1.4 3.2-3.2 3.2-1.9.1-3.2-1.2-3.2-3.2zm23.3-4.7h-1.5v6.5c-.9-1-5.6-6.4-5.6-6.4l-1.3-.1h-.3v9.7h1.8V65c.9 1 5.5 6.4 5.5 6.4l1.3.1h.3v-9.7h-.2zm7.6 0h-.3v9.7h3.8c3.3 0 5.1-2.5 5.1-4.8s-1.6-4.8-5.1-4.8h-3.5v-.1zm3.2 1.7c2.1 0 3.4 1.1 3.4 3.1 0 1.1-.7 3.1-3.3 3.1h-1.8v-6.1c.5-.1 1.7-.1 1.7-.1zm11.6 3c0 2.8 2.2 4.9 5.1 4.9 3.4 0 5.2-2.5 5.2-4.9 0-2.9-2.2-5-5.2-5-2.8.1-5.1 2.3-5.1 5zm1.9 0c0-1.8 1.4-3.2 3.2-3.2 1.9 0 3.2 1.3 3.2 3.2 0 1.8-1.4 3.2-3.2 3.2-1.7.1-3.2-1.2-3.2-3.2zm23.5-4.7h-1.5v6.5c-.9-1-5.6-6.4-5.6-6.4l-1.3-.1h-.3v9.7h1.8V65c.9 1 5.5 6.4 5.5 6.4l1.3.1h.3v-9.7h-.2z"
+              ></path>
+            </svg>
+            <h2>
+              <a href="https://www.thewhitecompany.com/" target="_blank"
+                >The White Company</a
+              >
+            </h2>
+            <h3 class="work-section-date">Mar 2020 - Present</h3>
+          </div>
+          <p class="work-inner-strapline">
+            The White Company is a worldwide retail brand based in the UK since 1994, offering luxury products for home and occasion. Their inspiration 
+            for timeless style and attention to detail is reflected in their predominantly white colour palette. 
+            <ul>
+              <li><span>Developing SPAs and new features in the Vue.js framework</span></li>
+              <li><span>Integration of frontend into SAP Hybris E-commerce software and Amplience CMS through implementation of 2-way APIs</span></li>
+              <li><span>As part of the Continuous Improvement, Architechture and Checkout projects, developing new features
+                to keep The White Company ahead of it's competitors in the Luxury retail space.
+              </span></li>
+              <li><span>Working with a diverse and progressive team(s) of project managers, line managers, technical leads, business analysts, backend engineers, testers and many more.
+              </span></li>
+            </ul>
+          </p>
+        </div>
+        <!-- may just white block this with drop shadow -->
         <div class="work-inner-section">
           <div class="work-inner-section-header">
-            <img src="./images/crucible-logo.png" alt="Crucible Creative">
-            <h2><a href="https://cruciblecreative.co.uk" target="_blank">Crucible Creative</a></h2>
-            <h3 class="work-section-date">May 2018 - Present</h3>
+            <img src="./images/crucible-logo.png" alt="Crucible Creative" />
+            <h2>
+              <a href="https://cruciblecreative.co.uk" target="_blank"
+                >Crucible Creative</a
+              >
+            </h2>
+            <h3 class="work-section-date">May 2018 - Feb 2020</h3>
           </div>
-          <p class="work-inner-strapline">Crucible helps companies transform their businesses through digital strategy,
-              exceptional user experience, digital design, and creative branded campaigns.</p>
+          <p class="work-inner-strapline">
+            Crucible helps companies transform their businesses through digital
+            strategy, exceptional user experience, digital design, and creative
+            branded campaigns.
+          </p>
           <ul>
-            <li ><span >Lead the development of bespoke websites for clients in the theatre, medical, fintech, recruitment sectors and more.</span></li>
-            <li ><span >Developed and optimised e-commerce websites in Woocommerce and Shopify.</span></li>
-            <li ><span >Built websites from the ground up using HTML5, CSS3, JavaScript (ES6), PHP7, SQL and more.</span></li>
-            <li ><span >Collaborated with remote teams to work on large and scalable projects built in React, Contentful CMS, AWS.</span></li>
-            <li ><span >Delivered custom designed and programmed website functionality with a focus on continuous incremental improvement. This includes SPAs, interactions, animations etc.</span></li>
-            <li ><span >Structured an efficient development cycle through task management tools, and collaborated with digital designers to produce websites with modern UX/UI. </span></li>
-            <li ><span >Lead bi-weekly standups with Crucible&rsquo;s designers and project managers to optimise the development workflow on a project by project basis.</span></li>
-            <li ><span >Driven strong marketing campaigns through UX focused, cross-platform HTML emails.</span></li>
-            <li ><span >Provided consultation for retainer contracts, site and server maintenance, refactoring, SEO.</span></li>
-            <li ><span >Acted as the sole technical consultant for projects worth over &pound;100k.</span></li>
+            <li>
+              <span
+                >Lead the development of bespoke websites for clients in the
+                theatre, medical, fintech, recruitment sectors and more.</span
+              >
+            </li>
+            <li>
+              <span
+                >Built websites from the ground up using HTML5, CSS3, JavaScript
+                (ES6), PHP7, SQL and more.</span
+              >
+            </li>
+            <li>
+              <span
+                >Collaborated with remote teams to work on large and scalable
+                projects built in React, Contentful CMS, AWS.</span
+              >
+            </li>
+            <li>
+              <span
+                >Delivered custom designed and programmed website functionality
+                with a focus on continuous incremental improvement. This
+                includes SPAs, interactions, animations etc.</span
+              >
+            </li>
+            <li>
+              <span
+                >Structured an efficient development cycle through task
+                management tools, and collaborated with digital designers to
+                produce websites with modern UX/UI.
+              </span>
+            </li>
+            <li>
+              <span
+                >Provided consultation for retainer contracts, site and server
+                maintenance, refactoring, SEO.</span
+              >
+            </li>
+            <li>
+              <span
+                >Acted as the sole technical consultant for projects worth over
+                &pound;100k.</span
+              >
+            </li>
           </ul>
           <h3>Example sites I developed on behalf of Crucible Creative</h3>
           <div class="site-examples">
-            <a href="https://anthesisgroup.com" target="_blank">Anthesis Group</a>
-            <a href="https://lantum.com" target="_blank">Lantum - Healthcare Recruitment Software</a>
-            <a href="https://agoramicrofinance.com" target="_blank">Agora Microfinance</a>
-            <a href="https://riotcommunications.com" target="_blank">Riot Communications</a>
-            <a href="https://avaloncorporate.events" target="_blank">Avalon Corporate Events</a>
+            <a href="https://anthesisgroup.com" target="_blank"
+              >Anthesis Group</a
+            >
+            <a href="https://lantum.com" target="_blank"
+              >Lantum - Healthcare Recruitment Software</a
+            >
+            <a href="https://agoramicrofinance.com" target="_blank"
+              >Agora Microfinance</a
+            >
+            <a href="https://riotcommunications.com" target="_blank"
+              >Riot Communications</a
+            >
+            <a href="https://avaloncorporate.events" target="_blank"
+              >Avalon Corporate Events</a
+            >
             <a href="https://freeword.org" target="_blank">Free Word Theatre</a>
-            <a href="https://powtheatre.co.uk" target="_blank">Pint of Wine Theatre</a>
-            <a href="https://cruciblecreative.co.uk" target="_blank">Crucible Creative</a>
+            <a href="https://powtheatre.co.uk" target="_blank"
+              >Pint of Wine Theatre</a
+            >
+            <a href="https://cruciblecreative.co.uk" target="_blank"
+              >Crucible Creative</a
+            >
           </div>
         </div>
         <div class="work-inner-section">
-            <div class="work-inner-section-header">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_0_xA0_Image_1_" x="0px" y="0px" viewBox="0 0 164.1 231.1" style="enable-background:new 0 0 164.1 231.1;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path d="M131.3,113.4c-4.3-2.1-8.8-3.6-13.7-5.5c0.7-0.5,1.2-0.8,1.7-1.1c17.7-9.8,28.1-24.8,30.4-44.9    c2.5-21.6-4.8-39.1-23.2-51.4C114.8,2.7,101.4,0,87.3,0c-28.1,0-56.2,0-84.2,0C0.7,0,0,0.6,0,3.1c0.1,75,0.1,150,0.1,225    c0,0.9,0,1.9,0,3c1.1,0,1.8,0,2.5,0c32,0,64,0,96,0c3,0,6.1-0.2,9-0.6c29.2-4.5,52.5-27.8,56-57    C166.7,147.7,156.6,125.5,131.3,113.4z M44.7,185.6c-9.5,0-18.9,0-28.6,0h0c0-15,0-30,0-45.2h0c2.2,0,4.3,0,6.7,0    c0,13.1,0,25.9,0,39.1c7.3,0,14.5,0,21.9,0C44.7,181.8,44.7,183.6,44.7,185.6z M34.3,84.9c-6.1,0.3-12.3,0-18.4,0.1    c-1.5,0-2-0.6-2-2.1c0-13.9,0-27.7,0.1-41.6c0-0.7,1-2,1.5-2c6-0.1,12.1-0.3,18.1,0.1c5,0.3,9.2,2.4,11,7.5    c1.8,5.3,0.1,9.7-4.4,13.6c4.7,2.2,7.4,5.4,7.7,10.3C48.3,78.3,42.4,84.5,34.3,84.9z M98,175c-3.2,6.2-8.2,10.1-15.2,10.6    c-6.3,0.4-12.6,0.1-19.2,0.1c-0.1-1.2-0.1-2-0.1-2.9c0-13.2,0-26.4-0.1-39.7c0-2.3,0.5-3.2,2.9-3.1c4.7,0.2,9.4,0,14.1,0.1    c9.3,0.2,16.1,5.1,19,13.9C101.7,161.2,101.4,168.3,98,175z M99.6,71.1c-2.5,9.5-9.8,15-19.5,15c-9.7,0-16.9-5.5-19.5-15    c-1.6-5.8-1.7-11.6-0.1-17.4c2.7-10.1,10.2-15.8,20.2-15.5c10.2,0.3,17.6,6.7,19.5,17c0.4,2.3,0.6,4.7,0.9,7.6    C100.6,65.3,100.4,68.3,99.6,71.1z"/>
-                      <path d="M35.9,64.8c-1-0.4-2-0.8-3-0.9c-3.9-0.1-7.8,0-11.9,0c0,5.1,0,9.8,0,14.7c4.6,0,9,0.2,13.4-0.1c3.6-0.3,6.1-3,6.5-6.1    C41.3,69.1,39.4,66.2,35.9,64.8z"/>
-                      <path d="M32.5,57.4c1.7-0.2,3.7-1.4,4.9-2.7c2.9-3.2,1.3-8.4-2.9-8.9c-4.4-0.5-8.9-0.1-13.6-0.1c0,3.9,0,7.7,0,11.8    C25,57.5,28.8,57.8,32.5,57.4z"/>
-                    </g>
-                  </g>
-                </svg>
-            <h2><a href="https://sobold.co.uk" target="_blank">SoBold Digital</a></h2>
+          <div class="work-inner-section-header">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              viewBox="0 0 91.978 109.053"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #23273e;
+                  }
+                  .cls-2 {
+                    fill: url(#linear-gradient);
+                  }
+                  .cls-3 {
+                    fill: url(#linear-gradient-2);
+                  }
+                </style>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="24.43"
+                  y1="25.83"
+                  x2="91.52"
+                  y2="25.83"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#6fd1d1" />
+                  <stop offset="0.53" stop-color="#beb6cb" />
+                  <stop offset="1" stop-color="#ff9fc6" />
+                </linearGradient>
+                <linearGradient
+                  id="linear-gradient-2"
+                  x1="0"
+                  y1="67.92"
+                  x2="91.54"
+                  y2="67.92"
+                  xlink:href="#linear-gradient"
+                />
+              </defs>
+              <title>logo_no_strap</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path
+                    class="cls-2"
+                    d="M70.42,46.25l4.77-3.52a18.89,18.89,0,0,0,3.94-26.39A18.69,18.69,0,0,0,66.75,8.91a19.39,19.39,0,0,0-2.84-.21,18.64,18.64,0,0,0-11.17,3.69L37.23,23.86a32.13,32.13,0,0,0-9.68-1.5q-1.56,0-3.12.15L47.56,5.4A27.33,27.33,0,0,1,63.93,0,27.56,27.56,0,0,1,80.36,49.73l-2.62,1.94Z"
+                  />
+                  <path
+                    class="cls-3"
+                    d="M63.93,109a27.32,27.32,0,0,1-16.37-5.41L24.41,86.43a30.86,30.86,0,0,0,3.16.17,31.94,31.94,0,0,0,9.68-1.5L52.74,96.56a18.63,18.63,0,0,0,11.19,3.71,20.47,20.47,0,0,0,2.82-.21,18.87,18.87,0,0,0,8.44-33.83l-36.43-27a18.7,18.7,0,0,0-11.21-3.7c-.48,0-.95,0-1.43.08a20.23,20.23,0,0,0-3.15.5,18.95,18.95,0,0,0-10.6,29.59A18.73,18.73,0,0,0,23,72.82c.57.14,1.15.26,1.75.35.26,0,.52,0,.79.07l.8.06c.42,0,.83.08,1.24.08a18.74,18.74,0,0,0,11.18-3.69l16.75-12.4,7.32,5.41-18.89,14a27.52,27.52,0,0,1-6.44,3.53c-.5.2-1,.38-1.43.53s-1,.31-1.55.44a27.53,27.53,0,0,1-22.14-3.65l-1.1-.82A27.49,27.49,0,0,1,.28,58.6c-.06-.38-.08-.67-.11-1l0-.49a27.38,27.38,0,0,1,11-24.8l1.23-.9a27.31,27.31,0,0,1,11.1-4.27,29,29,0,0,1,4.15-.31,27.71,27.71,0,0,1,6.91.9c.52.14,1,.28,1.55.45s1,.34,1.43.52a27.82,27.82,0,0,1,6.43,3.53l36.43,27A27.56,27.56,0,0,1,68,108.66a27.08,27.08,0,0,1-4.11.31Z"
+                  />
+                </g>
+              </g>
+            </svg>
+            <h2>
+              <a href="https://sobold.co.uk" target="_blank">SoBold Digital</a>
+            </h2>
             <h3 class="work-section-date">Feb 2016 - May 2018</h3>
-            </div>
-            <p class="work-inner-strapline">SoBold are a digital marketing agency, specialising in website effectiveness for small and large, local and global businesses. From creating new websites to making the most of existing ones, SoBold help you deliver on a cross-platform digital strategy to maximise your online presence.</p>
-            <ul>
-                <li>Created and managed bespoke responsive websites for clients in the finance, luxury, clinical and sport sectors.</li>
-                <li>Managed the development team to build and deliver technical end-user products.</li>
-                <li>Modified existing websites via JavaScript, PHP and CSS3 animations to improve KPIs</li>
-                <li>Driven strong marketing campaigns through UX focused, cross-platform HTML emails.</li>
-                <li>Provided consultations for clients to improve on-site SEO and complying with modern practices.</li>
-                <li>Adopted the role of senior developer to manage new hires and identified strong skills to maximise their performance at SoBold.</li>
-                <li>Communicated with SMEs during projects to improve quality of deliverables.  </li>
-                <li>Collaborated with the managing director on business development and client acquisition.</li>
-                <li>Developed reusable web components to aid design and development (css frameworks, javascript snippets and WordPress plugins) for use in projects.</li>
-                <li>Doubled the company’s year-on-year revenue in 2016 by extending the technical deliverables of SoBold. Transitioned all projects in-house and attributed my own efforts to ensure each project’s success.</li>
-            </ul>
-            <h3>Example sites I developed on behalf of Sobold Group</h3>
-          <div class="site-examples">
-            <a href="https://videobrochuresmarketing.com" target="_blank">Video Brochure Marketing</a>
-            <a href="https://thefitnessmosaic.com" target="_blank">The Fitness Mosaic</a>
-            <a href="https://clanwilliamgroup.com" target="_blank">Clanwilliam Group</a>
-            <a href="https://tiebreaktens.com" target="_blank">Tie Break Tens</a>
           </div>
+          <p class="work-inner-strapline">
+            SoBold are a digital marketing agency, specialising in website
+            effectiveness for small and large, local and global businesses. From
+            creating new websites to making the most of existing ones, SoBold
+            help you deliver on a cross-platform digital strategy to maximise
+            your online presence.
+          </p>
+          <ul>
+            <li>
+              Created and managed bespoke responsive websites for clients in the
+              finance, luxury, clinical and sport sectors.
+            </li>
+            <li>
+              Managed the development team to build and deliver technical
+              end-user products.
+            </li>
+            <li>
+              Modified existing websites via JavaScript, PHP and CSS3 animations
+              to improve KPIs
+            </li>
+            <li>
+              Driven strong marketing campaigns through UX focused,
+              cross-platform HTML emails.
+            </li>
+            <li>
+              Provided consultations for clients to improve on-site SEO and
+              complying with modern practices.
+            </li>
+            <li>
+              Adopted the role of senior developer to manage new hires and
+              identified strong skills to maximise their performance at SoBold.
+            </li>
+            <li>
+              Communicated with SMEs during projects to improve quality of
+              deliverables.
+            </li>
+            <li>
+              Collaborated with the managing director on business development
+              and client acquisition.
+            </li>
+            <li>
+              Developed reusable web components to aid design and development
+              (css frameworks, javascript snippets and WordPress plugins) for
+              use in projects.
+            </li>
+            <li>
+              Doubled the company’s year-on-year revenue in 2016 by extending
+              the technical deliverables of SoBold. Transitioned all projects
+              in-house and attributed my own efforts to ensure each project’s
+              success.
+            </li>
+          </ul>
+          <h3>Example sites I developed on behalf of Sobold Group</h3>
+          <div class="site-examples">
+            <a href="https://videobrochuresmarketing.com" target="_blank"
+              >Video Brochure Marketing</a
+            >
+            <a href="https://thefitnessmosaic.com" target="_blank"
+              >The Fitness Mosaic</a
+            >
+            <a href="https://clanwilliamgroup.com" target="_blank"
+              >Clanwilliam Group</a
+            >
+            <a href="https://tiebreaktens.com" target="_blank"
+              >Tie Break Tens</a
+            >
           </div>
         </div>
       </div>
+    </div>
     <div id="contact" class="section">
       <div>
         <h2 class="section-header">Enquiries and General Contact</h2>
-          <form action="https://formspree.io/hello@kylegriffin.co.uk" method="POST">
-            <label>Name
-              <input type="text" name="name">
-            </label>
-            <label>Email
-                <input type="email" name="email">
-              </label>
-            <label>Message
-                  <textarea name="message"></textarea>
-            </label>
-            <input type="submit" value="Send">
-          </form>
+        <form
+          action="https://formspree.io/hello@kylegriffin.co.uk"
+          method="POST"
+        >
+          <label
+            >Name
+            <input type="text" name="name" />
+          </label>
+          <label
+            >Email
+            <input type="email" name="email" />
+          </label>
+          <label
+            >Message
+            <textarea name="message"></textarea>
+          </label>
+          <input type="submit" value="Send" />
+        </form>
       </div>
     </div>
-  <script id="__bs_script__">//<![CDATA[
-      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
-  //]]></script>
-</body>
-<script src="/js/jquery-3.2.1.min.js"></script>
-
+    <label id="dark-mode-toggle">
+      <input class='toggle-checkbox' type='checkbox'></input>
+      <div class='toggle-slot'>
+        <div class='sun-icon-wrapper'>
+          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+        </div>
+        <div class='toggle-button'></div>
+        <div class='moon-icon-wrapper'>
+          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+        </div>
+      </div>
+    </label>
+    <script id="__bs_script__">
+      //<![CDATA[
+      document.write(
+        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace(
+          "HOST",
+          location.hostname
+        )
+      );
+      //]]>
+    </script>
+  </body>
+  <script src="/js/jquery-3.2.1.min.js"></script>
+  <script src="/js/dark-mode.js" type="text/javascript"></script>
+  <script src="/js/e.js" type="text/javascript"></script>
 </html>
