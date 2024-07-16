@@ -1,4 +1,3 @@
-<h1> Kyle Griffin </h1>
-<h3> Web Developer </h3>
+# Kyle Griffin
 
-<p> Based in London, UK </p>
+Frontend Web Developer, based in London UK.
