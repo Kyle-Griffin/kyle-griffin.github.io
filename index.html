@@ -6,64 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/toggle.css" rel="stylesheet" type="text/css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon-32x32.png"
-    />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="./favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon-16x16.png"
+      href="./images/favicon/android-icon-96x96.png"
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="./ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:400,700,900"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -78,43 +35,113 @@
       name="google-site-verification"
       content="rKCLwQOLWWI6luyZPIKXcXHlyASFsuCeTKLBkiAVwk0"
     />
-    <title>Kyle Griffin - Front-End Web Developer</title>
+    <title>Kyle Griffin - Frontend Web Developer</title>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGPTKB86LB"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RGPTKB86LB"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-RGPTKB86LB');
+      gtag("config", "G-RGPTKB86LB");
     </script>
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script> 
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
   </head>
 
   <body>
+    <a id="github-link" href="https://github.com/Kyle-Griffin" target="_blank">
+      <img src="./images/languages/github.svg" alt="Github Page" />
+    </a>
     <div id="first-section" class="section">
       <div class="vertical-center">
         <h1 class="first-section-title">
-          <span>K</span><span>Y</span><span>L</span><span id="the-e">E</span>
-          GRIFFIN</h1>
-        <h3 class="first-section-subtitle">Front-End Web Developer</h3>
+          <span>K</span><span>Y</span><span>L</span
+          ><span id="the-e">E</span> GRIFFIN
+        </h1>
+        <h3 class="first-section-subtitle">Frontend Web Developer</h3>
         <div class="short-seperator"></div>
         <div class="links">
           <a href="https://www.linkedin.com/in/kylegriffin2/" target="_blank"
             >LinkedIn</a
           ><span>/</span>
-          <a
-            href="https://github.com/Kyle-Griffin"
-            target="_blank"
-            >GitHub</a
+          <a href="https://github.com/Kyle-Griffin" target="_blank">GitHub</a
           ><span>/</span>
           <a href="mailto:hello@kylegriffin.co.uk">Contact</a>
         </div>
         <div>
           <p>
-            Based in London, I develop beautiful, robust websites using a
-            variety of front-end technologies.
+            Based in London, I develop beautifully designed and engineered
+            websites with a focus on <b>accessibility</b>,
+            <b>responsive layouts</b> and <b>scalability</b>.
           </p>
+        </div>
+      </div>
+    </div>
+    <div id="skills" class="section">
+      <div class="skills-inner">
+        <h2 class="section-header">Skills</h2>
+        <p>
+          I work with a range of modern languages and tools. I am currently
+          working on <b>React</b> and <b>Vue</b> projects.
+        </p>
+        <h4>Languages</h4>
+        <div class="skills-grid-wrapper">
+          <ul class="skills-grid">
+            <li class="skills-grid__skill">
+              <img src="./images/languages/react.svg" alt="React JS Logo" />
+              <span>React</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img src="./images/languages/nextjs.svg" alt="Next JS Logo" />
+              <span>Next.js</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img src="./images/languages/vue.svg" alt="Vue JS Logo" />
+              <span>Vue</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img
+                src="./images/languages/javascript.svg"
+                alt="Javascript Logo"
+              />
+              <span>Javascript</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img
+                src="./images/languages/typescript.svg"
+                alt="Typescript Logo"
+              />
+              <span>Typescript</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img
+                src="./images/languages/tailwindcss-icon.svg"
+                alt="Tailwind Logo"
+              />
+              <span>Tailwind CSS</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img src="./images/languages/HTML5_Logo.svg" alt="HTML5 Logo" />
+              <span>HTML5</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img src="./images/languages/css3.svg" alt="CSS3 Logo" />
+              <span>CSS3</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img src="./images/languages/nodejs.svg" alt="Node JS Logo" />
+              <span>Node</span>
+            </li>
+            <li class="skills-grid__skill">
+              <img src="./images/languages/webpack.svg" alt="Webpack Logo" />
+              <span>Webpack</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -156,33 +183,75 @@
             <h3 class="work-section-date">Mar 2020 - Present</h3>
           </div>
           <p class="work-inner-strapline">
-            The White Company is a worldwide retail brand based in the UK since 1994, offering luxury products for home and occasion. Their inspiration 
-            for timeless style and attention to detail is reflected in their predominantly white colour palette. 
-            <ul>
-              <li><span>Developed and tested new features in Vue.js for The White Company website
-                experience across multiple projects and teams, in-house and remote.</span></li>
-              <li><span>Collaborated in an Agile workflow with cross-functional teams, including UX/UI
-                designers, backend developers, test analysts, business analysts, project managers,
-                release management, and key stakeholders throughout the software development
-                lifecycle.</span></li>
-              <li><span>Delivered on projects to increase YoY revenue of over 2% globally.</span></li>
-              <li><span>Performance auditing and refactoring of codebase, reducing total size by 25%.</span></li>
-              <li><span>Mentored and onboarded new developers and staff.</span></li>
-              <li><span>Written high level solution design documents for upcoming projects, as well as
-                documentation of existing features.</span></li>
-              <li><span>Assuming responsibility of project deliverables, leading technical discussions with
-                non-technical personnel, assisting the project managers with ticketing and breakdown of
-                the technical solution towards a deadline-driven agile paradigm.</span></li>
-              <li><span>Led the cross-project implementation of eWallet payment methods (ApplePay, PayPal)
-                across the cart and checkout user journey, resulting in a 10% improvement in order
-                completion rates across thousands of monthly orders in the UK, US, and globally.</span></li>
-            </ul>
+            The White Company is a worldwide retail brand based in the UK since
+            1994, offering luxury products for home and occasion. Their
+            inspiration for timeless style and attention to detail is reflected
+            in their predominantly white colour palette.
           </p>
+          <ul>
+            <li>
+              <span
+                >Developed and tested new features in Vue and React for The
+                White Company website experience across multiple projects and
+                teams, in-house and remote.</span
+              >
+            </li>
+            <li>
+              <span
+                >Collaborated in an Agile workflow with cross-functional teams,
+                including UX/UI designers, backend developers, test analysts,
+                business analysts, project managers, release management, and key
+                stakeholders throughout the software development
+                lifecycle.</span
+              >
+            </li>
+            <li>
+              <span
+                >Delivered on projects to increase YoY revenue of over 2%
+                globally.</span
+              >
+            </li>
+            <li>
+              <span
+                >Performance auditing and refactoring of codebase, reducing
+                total size by 25%.</span
+              >
+            </li>
+            <li>
+              <span>Mentored and onboarded new developers and staff.</span>
+            </li>
+            <li>
+              <span
+                >Written high level solution design documents for upcoming
+                projects, as well as documentation of existing features.</span
+              >
+            </li>
+            <li>
+              <span
+                >Assuming responsibility of project deliverables, leading
+                technical discussions with non-technical personnel, assisting
+                the project managers with ticketing and breakdown of the
+                technical solution towards a deadline-driven agile
+                paradigm.</span
+              >
+            </li>
+            <li>
+              <span
+                >Led the cross-project implementation of eWallet payment methods
+                (ApplePay, PayPal) across the cart and checkout user journey,
+                resulting in a 10% improvement in order completion rates across
+                thousands of monthly orders in the UK, US, and globally.</span
+              >
+            </li>
+          </ul>
         </div>
         <!-- may just white block this with drop shadow -->
         <div class="work-inner-section">
           <div class="work-inner-section-header">
-            <img src="./images/crucible-logo.png" alt="Crucible Creative" />
+            <img
+              src="./images/work/crucible-logo.png"
+              alt="Crucible Creative"
+            />
             <h2>
               <a href="https://crucible.io" target="_blank"
                 >Crucible Creative</a
@@ -400,7 +469,9 @@
     <div id="contact" class="section">
       <div>
         <h2 class="section-header">Enquiries and General Contact</h2>
-        <p>I am available for consultation and projects. Drop me a message below!</p>
+        <p>
+          I am available for consultation and projects. Drop me a message below!
+        </p>
         <form
           action="https://formspree.io/hello@kylegriffin.co.uk"
           method="POST"
@@ -422,14 +493,22 @@
       </div>
     </div>
     <label id="dark-mode-toggle">
-      <input class='toggle-checkbox' type='checkbox'></input>
-      <div class='toggle-slot'>
-        <div class='sun-icon-wrapper'>
-          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+      <input class="toggle-checkbox" type="checkbox" />
+      <div class="toggle-slot">
+        <div class="sun-icon-wrapper">
+          <div
+            class="iconify sun-icon"
+            data-icon="feather-sun"
+            data-inline="false"
+          ></div>
         </div>
-        <div class='toggle-button'></div>
-        <div class='moon-icon-wrapper'>
-          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+        <div class="toggle-button"></div>
+        <div class="moon-icon-wrapper">
+          <div
+            class="iconify moon-icon"
+            data-icon="feather-moon"
+            data-inline="false"
+          ></div>
         </div>
       </div>
     </label>

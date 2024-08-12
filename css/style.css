@@ -1,132 +1,13 @@
-/* Main SCSS stylesheet for my site */
-/*
-@import - add in code from other partial files. do not include the _ or .scss
-@mixin - create a mixin (e.g. @mixin round($circumference) { })
-  @include - refer to a mixin (e.g. box-shadow: @include round(10px); )
-@extend - include styles from another existing style (e.g. change the colour of a base button)
-*/
-/* Vendor imports */
+/* Imports */
+@import url("./core.css");
+@import url("./animations.css");
 
-/* animations */
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
-
-@-webkit-keyframes into-place {
-  from {
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-/* Partials */
-/* colors */
-/* font family */
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --base-text-color: #373d3f;
-  --base-bg-color: #eeeeee;
-  --base-bg-color-white: #ffffff;
-  --link-main: #f0932b;
-  --link-hover: #0088d4;
-  --form-black: #333333;
-  --transition-text: 0.2s;
-  --transition-bg: 0.15s;
-}
-
-html {
-  font-size: 10px;
-  padding: 0;
-  margin: 0;
-  text-rendering: optimizeLegibility;
-}
-
-body {
-  margin: 0;
-  font-family: "Quicksand", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
-    Arial, "Lucida Grande", sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.566;
-  font-weight: 600;
-  padding-bottom: 10vh;
-  transition: background-color var(--transition-bg) ease;
-  background-color: var(--base-bg-color);
-  color: var(--base-text-color);
-}
-
-body.dark-mode {
-  --base-bg-color: #373d3f;
-  --base-text-color: #eeeeee;
-  --base-bg-color-white: #333;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
-h1,
-.h1 {
-  font-size: 3.8rem;
-}
-
-h2,
-.h2 {
-  font-size: 3.4rem;
-}
-
-h3,
-.h3 {
-  font-size: 2.8rem;
-}
-
-h4,
-.h4 {
-  font-size: 2.4rem;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--link-main);
-  font-weight: 600;
-  transition: var(--transition-text) color ease;
-}
-a:hover {
-  color: var(--link-hover);
-}
-
-a.underlined {
-  border-bottom: 4px solid;
-}
+/* === Section styles === */
 
 #first-section,
 .section {
   max-width: 830px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -134,9 +15,6 @@ a.underlined {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-#first-section {
-  min-height: 100vh;
 }
 
 .section.section-fluid {
@@ -149,12 +27,23 @@ a.underlined {
   padding-right: 0px;
 }
 
-.section-header {
-  font-size: calc(10px + 1.5vmax);
-  width: fit-content;
+/* === First section === */
+
+#github-link {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+
+  & img {
+    width: 100%;
+  }
 }
 
-/* === First section === */
+#first-section {
+  min-height: 100vh;
+}
 
 .first-section-title {
   font-size: 8vmax;
@@ -206,11 +95,35 @@ a.underlined {
   font-size: 3rem;
 }
 
-/* ----- services ----- */
+/* ----- Skills ----- */
 
-/* #services ul {
-  font-size: 2.5rem;
-} */
+.skills-inner {
+  width: 100%;
+}
+
+.skills-grid {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  padding: 0;
+  grid-gap: 16px;
+}
+
+.skills-grid__skill {
+  padding: 12px 8px 8px;
+  min-height: 80px;
+  background: var(--base-bg-color-white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.skills-grid__skill img {
+  max-width: 100%;
+  height: 50px;
+}
 
 /* ----  work section ---- */
 
@@ -287,7 +200,7 @@ form {
   background: var(--base-bg-color-white);
   padding: 30px 3vw;
   max-width: max-content;
-  margin: 0 auto;
+  margin: 24px auto;
 }
 form * {
   display: block;
